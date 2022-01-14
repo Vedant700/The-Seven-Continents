@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Gwendolyn:wght@400;500;700&family=Poppins:wght@400;500;700&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+html{
+    font-size: 62.5%;
+
+    background: linear-gradient(-45deg, #ee7752, #e73c7e,#23a6d5, #23d5ab );
+    background-size: 2000% 200%;
+    position: relative;
+    animation: change 10s ease-in-out infinite;
+}
+section{
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    
+}
+.nav-menu{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    padding: .5rem, 1.5rem;
+}
+.nav-items{
+    padding: .7rem 1rem;
+    list-style: none;
+}
+.nav-items a{
+    font-size: 1.5rem;
+    position: relative;
+    font-weight: 200;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 0.03rem;
+    padding: 0 1rem;
+}
+.nav-items a:after{
+    content: "";
+    position: absolute;
+    background-color: #ffff;
+    height: 0.2rem;
+    width: 0;
+    left: 0;
+    bottom: -1rem;
+    transition: 0.3s;
+}
+.nav-items a:hover:after{
+    width: 100%;
+}
+.content-heading{
+    padding-top: 3.0rem;
+    text-transform: uppercase;
+    font-size: 9.6rem;
+    letter-spacing: .5rem;
+    color: #fff;
+    text-shadow: -0.2rem 0.2rem 0rem #183954,
+    -0.4rem 0.4rem 0rem #183954,
+    -0.8rem 0.8rem 0rem rgba(0,0,0,0.5),
+    -1.8rem 1.8rem 5rem rgba(0,0,0,0.5);
+}
+
+.box {
+    top: 5%;
+    left: 20%;
+    padding: 3em 3em;
+    position: relative;
+    width: 50vw;
+    height: auto;
+    /* line-height: 350px; */
+    background: #111111;
+    color: #ffffff;
+    text-align: center;
+    /* align-items: center; */
+    font-size: 1.25rem;
+    text-transform: uppercase;
+}
+
+.box::before,
+.box::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    top: -3px;
+    left: -3px;
+    background: linear-gradient(45deg,
+            #fc0090, #0000ff, #00ff00, #ff0000, #ffff00,
+            #fc0090, #0000ff, #00ff00, #ff0000, #ffff00);
+    background-size: 300%;
+    animation: border 20s linear infinite;
+}
+
+.text-container{
+    padding: 0 30rem;
+    font-size: 1.7rem;
+}
+@keyframes change{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+
+}
+@media(max-width:998px){
+    html{
+        font-size: 55%;
+    }
+    .content-heading{
+    padding-top: 3.0rem;
+    letter-spacing: .5rem;
+    font-size: 7rem;
+    }
+    .text-container{
+        padding: 0 4rem;
+        font-size: 1.7rem;
+    }
+}
+@media(max-width:768px){
+    html{
+        font-size: 45%;
+    }
+}
+.box {
+    box-shadow: -0.4rem 0.4rem 0rem #183954,
+    -0.8rem 0.8rem 0rem #183954,
+    -0.16rem 0.16rem 0rem rgba(0,0,0,0.5),
+    -3.6rem 3.6rem 10rem rgba(0,0,0,0.5);
+    top: 5%;
+    left: 23%;
+    padding: 3em 5em;
+    position: relative;
+    width: 50vw;
+    height: auto;
+    /* line-height: 350px; */
+    background: #111111;
+    color: #ffffff;
+    text-align: center;
+    /* align-items: center; */
+    font-size: 1.5rem;
+
+    text-transform: uppercase;
+}
+
+.box::before,
+.box::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    top: -3px;
+    left: -3px;
+    background: linear-gradient(45deg,
+            #fc0090, #0000ff, #00ff00, #ff0000, #ffff00,
+            #fc0090, #0000ff, #00ff00, #ff0000, #ffff00);
+    background-size: 300%;
+    animation: border 20s linear infinite;
+}
+
+.box::after {
+    filter: blur(30px);
+}
+
+.box1 {
+    box-shadow: -0.4rem 0.4rem 0rem #183954,
+    -0.8rem 0.8rem 0rem #183954,
+    -0.16rem 0.16rem 0rem rgba(0,0,0,0.5),
+    -3.6rem 3.6rem 10rem rgba(0,0,0,0.5);
+    left: 23%;
+    top: 15%;
+    padding: 3em 3em;
+    position: relative;
+    width: 50vw;
+    height: auto;
+    background: #111111;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.5rem;
+
+    text-transform: uppercase;
+}
+
+.box1::before,
+.box1::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    top: -3px;
+    left: -3px;
+    background: linear-gradient(45deg,
+            #fc0090, #0000ff, #00ff00, #ff0000, #ffff00,
+            #fc0090, #0000ff, #00ff00, #ff0000, #ffff00);
+    background-size: 300%;
+    animation: border 20s linear infinite;
+}
+
+.box1::after {
+    filter: blur(30px);
+}
+
+.box2 {
+    box-shadow: -0.4rem 0.4rem 0rem #183954,
+    -0.8rem 0.8rem 0rem #183954,
+    -0.16rem 0.16rem 0rem rgba(0,0,0,0.5),
+    -3.6rem 3.6rem 10rem rgba(0,0,0,0.5);
+    left: 23%;
+    top: 25%;
+    padding: 3em 3em;
+    position: relative;
+    width: 50vw;
+    height: auto;
+    background: #111111;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+}
+
+.box2::before,
+.box2::after {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    top: -3px;
+    left: -3px;
+    background: linear-gradient(45deg,
+            #fc0090, #0000ff, #00ff00, #ff0000, #ffff00,
+            #fc0090, #0000ff, #00ff00, #ff0000, #ffff00);
+    background-size: 300%;
+    animation: border 20s linear infinite;
+}
+
+.box2::after {
+    filter: blur(30px);
+}
+
+@keyframes border {
+
+    0%,
+    100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 300%;
+    }
+
+}
+.c-img img{
+    padding-top: 10rem;
+    width: 60%;
+}
+.gotop{
+    border: 2px solid black;
+    padding: 0 5rem;
+    font-size: 2rem;
+    position: absolute;
+    position: fixed;
+    bottom: 2rem;
+    left: 2rem;
+}
+.gotop a{
+    text-decoration: none;
+}
+@media(max-width:1010px){
+    .gotop{
+        display: none;
+    }
+}
+@media(max-width:435px){
+    .nav-items a{
+    font-size: 1.5rem;
+    letter-spacing: 0;
+}
+}
